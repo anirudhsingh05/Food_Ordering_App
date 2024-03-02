@@ -46,7 +46,7 @@ const Headers = () => {
 const imgURL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
-const resobj = [
+const resobjlist = [
   {
     info: {
       id: "607353",
@@ -214,7 +214,7 @@ const RestaurantCard = (props) => {
     sla,
     avgRatingString,
     costForTwo,
-  } = resData.info;
+  } = resData?.info;
   return (
     <div className="res-card">
       <img
@@ -239,9 +239,9 @@ const Body = () => {
     <div className="body">
       <div className="search">search</div>
       <div className="res-container">
-        {/* <RestaurantCard resData={resobj[0]} />
-        <RestaurantCard resData={resobj[1]} /> */}
-        {resobj.map((Restaurant) => (
+        {/* <RestaurantCard resData={resobjlist[0]} />
+        <RestaurantCard resData={resobjlist[1]} /> */}
+        {resobjlist.map((Restaurant) => (
           <RestaurantCard key={Restaurant.info.id} resData={Restaurant} />
         ))}
       </div>
