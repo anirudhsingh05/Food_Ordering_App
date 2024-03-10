@@ -25,7 +25,9 @@
 }
 
 .res-card {
-    width: 200px;
+    margin: 10px;
+    margin-left: 0;
+    width: 210px;
     padding: 5px;
     background-color: #f0f0f0;
 }
@@ -49,4 +51,31 @@
     display: flex;
     flex-wrap: wrap;
     margin: 5px;
+}
+
+.shim-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.shim-card {
+    margin: 10px;
+    background-color: #f0f0f0;
+    width: 210px;
+    height: 380px;
+}
+
+.login {
+    padding: 0 10px;
+    margin: 0 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.filter {
+    display: flex;
+}
+
+.search {
+    padding-right: 20px;
 }
