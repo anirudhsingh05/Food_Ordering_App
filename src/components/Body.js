@@ -39,15 +39,16 @@ const Body = () => {
     <Shimmer />
   ) : (
     <div className="body">
-      <div className="filter">
-        <div className="search">
+      <div className="filter flex">
+        <div className="search my-4 py-4">
           <input
             type="text"
-            className="search-box"
+            className="ml-4 border border-solid border-black"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
           <button
+            className="px-4 py-2 bg-green-100 mx-4 rounded-lg hover:bg-green-200"
             onClick={() => {
               const filteredList = listOfRestaurants.filter((res) =>
                 res.info.name.toLowerCase().includes(searchText.toLowerCase())
@@ -58,20 +59,21 @@ const Body = () => {
             Search
           </button>
         </div>
-
-        <button
-          className="filter-btn"
-          onClick={() => {
-            const filteredList = listOfRestaurants.filter(
-              (res) => res.info.avgRating > 4.4
-            );
-            setListOfRestaurants(filteredList);
-          }}
-        >
-          Top rated Restaurants
-        </button>
+        <div className="flex items-center">
+          <button
+            className="bg-green-100 py-2 px-4 rounded-lg hover:bg-green-200"
+            onClick={() => {
+              const filteredList = listOfRestaurants.filter(
+                (res) => res.info.avgRating > 4.4
+              );
+              setListOfRestaurants(filteredList);
+            }}
+          >
+            Top rated Restaurants
+          </button>
+        </div>
       </div>
-      <div className="res-container">
+      <div className="flex flex-wrap">
         {/* <RestaurantCard resData={resobjlist[0]} />
           <RestaurantCard resData={resobjlist[1]} /> */}
         {filterList.map((Restaurant) => (
