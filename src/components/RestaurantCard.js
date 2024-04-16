@@ -11,7 +11,10 @@ const RestaurantCard = (props) => {
     costForTwo,
   } = resData?.info;
   return (
-    <div className="m-4 p-4 w-[272] bg-gray-100 rounded-lg hover:bg-gray-200 h-[450]">
+    <div
+      data-testid="resCard"
+      className="m-4 p-4 w-[272] bg-gray-100 rounded-lg hover:bg-gray-200 h-[450]"
+    >
       <img
         className="rounded-lg h-[200] w-[270]"
         alt="res-logo"
