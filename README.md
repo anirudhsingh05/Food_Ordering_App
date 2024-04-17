@@ -2,7 +2,7 @@
 
 ## Clone this Repository
 
-You need to write the following commands on the terminal screen(in vscode) so that you can run this project locally.
+You need to write the following commands on the terminal screen so that you can run this project locally.
 
 ```bash
   git clone "https://github.com/anirudhsingh05/Food_Ordering_App.git"
