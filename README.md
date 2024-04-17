@@ -1,14 +1,55 @@
 # Food odering app
 
+## Clone this Repository
+
+You need to write the following commands on the terminal screen(in vscode) so that you can run this project locally.
+
+```bash
+  git clone "https://github.com/anirudhsingh05/Food_Ordering_App.git"
+```
+
+Go to the project directory
+
+```bash
+  cd Food_Ordering_App
+```
+
+Install dependencies
+
+```bash
+  npm install
+```
+
+Start the server
+
+```bash
+  npm start
+```
+
+Run Some Test Cases
+
+```bash
+  npm run test
+```
+
 ## Structure of app
 
 ### Components :
 
 #### Headers :
+
        logo
        Nav-items
+         - Online status
+         - Home
+         - About us
+         - Contact us
+         - Grocery(lazy)
+         - login button
+         - UserName
 
 #### Body:
+
         search bar
         Restaurant-container
            -img
@@ -18,12 +59,14 @@
            -cusine
 
 #### Footer :
+
        Copyright
        links
        address
        contact
 
 ## React Hooks
+
        (Normal javascript utility function)
        -useState() : Superpowerful state variable in react
        -useEffect() : loads at the end and used for making external call from react
@@ -31,10 +74,12 @@
 #### tailwind css
 
 ## 2 Types of routing
+
     - Client-side-routing
     - server-side-routing
 
 ## Redux Toolkit
+
     - Install @reduxjs/toolkit and react-redux
     - Build our store
     - Connect our store to our app
@@ -43,15 +88,17 @@
     - Selector
 
 ## Types of Testing
+
        - Unit Testing
        - Integration Testing
        - End to End Testing (e2e testing)
 
 ## Setting up testing in our app
+
        - Installed React Testing Library
        - Installed jest
        - Installed Babel Dependencies
-       - Configure Babel 
+       - Configure Babel
        - Configure Parcel Config file to disable default babel transpilation
        - Jest: npx jest --init
        - Install jsdom Library
