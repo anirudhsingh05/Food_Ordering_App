@@ -1,5 +1,7 @@
 # Food odering app
 
+### Enbale CORS extension in browser, Otherwise Restaurant list won't be rendered Because we are using Swiggy Live API
+
 ## Clone this Repository
 
 You need to write the following commands on the terminal screen so that you can run this project locally.
